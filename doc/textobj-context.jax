@@ -1,0 +1,42 @@
+*textobj-context.txt*	コンテキストの textobj
+
+
+==============================================================================
+概要						*textobj-context-introduction*
+
+*textobj-context* はコンテキストを対象とした textobj です。
+
+>
+	lua << EOF
+	
+	Vim であればこのように if_lua 等で書かれた範囲が該当する
+
+	EOF
+<
+
+Requirement:
+
+- kana/vim-textobj-user - https://github.com/kana/vim-textobj-user
+- Shougo/context_filetype.vim - https://github.com/Shougo/context_filetype.vim
+
+
+==============================================================================
+設定例						*textobj-context-customizing*
+
+>
+	omap ib <Plug>(textobj-context-i)
+	vmap ib <Plug>(textobj-context-i)
+<
+
+
+==============================================================================
+インターフェース				*textobj-context-interface*
+
+------------------------------------------------------------------------------
+マッピング					*textobj-context-mapping*
+
+<Plug>(textobj-context-i)			*<Plug>(textobj-context-i)*
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
