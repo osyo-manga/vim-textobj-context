@@ -9,7 +9,7 @@ set cpo&vim
 
 call textobj#user#plugin('context', {
 \      '-': {
-\        'select-i': 'isb',
+\        'select-i': 'icx',
 \      '*select-i-function*': 'textobj#context#select_i_forward',
 \      },
 \    })
